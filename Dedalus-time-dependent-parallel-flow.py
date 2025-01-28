@@ -81,7 +81,6 @@ laplacian_psi_bar = d3.Laplacian(psi_bar).evaluate()
 #laplacian_psi_prime = d3.Laplacian(psi_prime).evaluate()
 #laplacian_laplacian_psi_prime = d3.Laplacian(laplacian_psi_prime).evaluate()
 psi = psi_bar + psi_prime
-psi_prime['g'] = np.sin(problem.time['g'])
 # Calculate the velocity field
 #u['g'][0] = d3.Differentiate(psi, coords['z']).evaluate().change_scales(1)['g']
 #u['g'][1] = -d3.Differentiate(psi, coords['x']).evaluate().change_scales(1)['g']
